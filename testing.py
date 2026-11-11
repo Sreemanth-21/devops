@@ -14,6 +14,7 @@ class TestAPI(unittest.TestCase):
         self.assertEqual(add(10,-20),-10)
     def test_zero(self):
         self.assertEqual(multiply(10,0),0)
-
+    def test_float(self):
+        self.assertEqual(add(10.5,20.5),31.0)
 if __name__=="__main__":
     unittest.main()
